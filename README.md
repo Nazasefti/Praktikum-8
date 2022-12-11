@@ -58,3 +58,6 @@ Menggunakan Perulangan uncountable, yang artinya selama statement bernilai True 
         
 # Hasil Output
 
+![Screenshot (205)](https://user-images.githubusercontent.com/115772516/206909094-599cf8a1-6a34-42ec-8329-380863d6f271.png)
+
+![Screenshot (206)](https://user-images.githubusercontent.com/115772516/206909138-6b8233b7-b41d-4281-bb0a-7dc0dec790eb.png)
