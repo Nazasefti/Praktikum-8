@@ -8,134 +8,53 @@
 
 ![image](https://user-images.githubusercontent.com/115772516/206904687-593a0ba8-57cf-4ac1-9992-9e077c0b5341.png)
 
-. Untuk memanggil fungsi dengan nama "os".
+Untuk memanggil fungsi dengan nama "os".
 
-import os
+![Screenshot (189)](https://user-images.githubusercontent.com/115772516/206906482-85c622b8-2242-4883-ab1c-c7b38f36e6ee.png)
 
-. Membuat class data_mhsw dengan atributnya, yaitu nama, nim, tugas, uts, dan uas.
+Membuat class data_mhsw dengan atributnya, yaitu nama, nim, tugas, uts, dan uas.
 
-class data_mhsw:
-    nama=""
-    nim=""
-    tugas=""
-    uts=""
-    uas=""
-    
-. Membuat variabel data = [] untuk menampung list dari data_mhsw.
+![Screenshot (190)](https://user-images.githubusercontent.com/115772516/206906607-6cb5ab16-3a26-4437-87fd-537848b59d4f.png)
 
-data = []
+Membuat variabel data = [] untuk menampung list dari data_mhsw.
 
-. Membuat fungsi tambahan jika diperlukan fungsi tersebut akan dipanggil oleh program.
+![Screenshot (191)](https://user-images.githubusercontent.com/115772516/206906774-fdbb62c5-ab60-4513-b253-1d863ccf5cfe.png)
 
-def no_data():
-    print("DAFTAR NILAI MAHASISWA")
-    print("----------------------")
-    print()
-    print(" - TIDAK ADA DATA - ")
-    print()
-    
-. Menampilkan data (lihat())
+Membuat fungsi tambahan jika diperlukan fungsi tersebut akan dipanggil oleh program.
 
-. Jika belum menginput data, maka akan memanggil fungsi no_data()
+![Screenshot (192)](https://user-images.githubusercontent.com/115772516/206906838-d31344ad-3091-4006-ab26-d21b033544ff.png)
 
-. Jika sebelumnya sudah menginput data, maka data sudah diinputkan akan di tampilkan oleh program.
+Menampilkan data (lihat())
 
-def lihat():
-    os.system("cls")
-    if len(data) <=0:
-        no_data()
-    else:
-        for a in data:
-            print("DAFTAR NILAI MAHASISWA")
-            print("-----------------------")
-            print("Nama Mahasiswa\t: "+a.nama)
-            print("NIM Mahasiswa\t: "+str(a.nim))
-            print("Nilai Tugas\t: "+str(a.tugas))
-            print("Nilai UTS\t: "+str(a.uts))
-            print("Nilai UAS\t: "+str(a.uas))
-            print("Nilai Akhir\t: "+str(a.akhir))
-            print()
-     
-. Menambahkan data (Tambah())
+Jika belum menginput data, maka akan memanggil fungsi no_data()
 
-. Menginput NIM, NAMA, Nilai Tugas, Nilai UTS, Nilai UAS.
+Jika sebelumnya sudah menginput data, maka data sudah diinputkan akan di tampilkan oleh program.
 
-. Jika data yang sudah diinput akan ditambahkan ke dalam variabel data.
+![Screenshot (198)](https://user-images.githubusercontent.com/115772516/206907039-3a81d645-56c3-43d8-86b3-01f71b97abb9.png)
 
-def tambah():
-    os.system("cls")
-    b = data_mhsw()
-    print("TAMBAH DATA")
-    print("------------")
-    b.nama = (input("Nama Mahasiswa\t: "))
-    b.nim = (int(input("NIM Mahasiswa\t: ")))
-    b.tugas = (int(input("Nilai Tugas\t: ")))
-    b.uts = (int(input("Nilai UTS\t: ")))
-    b.uas = (int(input("Nilai UAS\t: ")))
-    b.akhir = (b.tugas*30/100) + (b.uts*35/100) + (b.uas*35/100)
-    data.append(b)
-    print()
-    
-. Mengubah data (Ubah())
+Menambahkan data (Tambah())
 
-. Menginput Nama, kemudian input data yang ingin di ubah.
+Menginput NIM, NAMA, Nilai Tugas, Nilai UTS, Nilai UAS.
 
-def ubah():
-    os.system("cls")
-    if len(data) <=0:
-        no_data()
-    else:
-        nama = data_mhsw()
-        print("UBAH DATA")
-        print("---------")
-        nama = (input("Nama Mahasiswa\t: "))
-        for nama in data:
-            nama.tugas = (int(input("Nilai Tugas\t: ")))
-            nama.uts = (int(input("Nilai UTS\t: ")))
-            nama.uas = (int(input("Nilai UAS\t: ")))
-            akhir = (nama.tugas*30/100) + (nama.uts*35/100) + (nama.uas*35/100)
-        print()
+Jika data yang sudah diinput akan ditambahkan ke dalam variabel data.
+
+![Screenshot (199)](https://user-images.githubusercontent.com/115772516/206907131-b271dbbf-d0b5-4098-81b6-3132ad2debb5.png)
+  
+Mengubah data (Ubah())
+
+Menginput Nama, kemudian input data yang ingin di ubah.
+
+![Screenshot (200)](https://user-images.githubusercontent.com/115772516/206907200-2ca254b9-28d1-4053-ab94-56f6f32a1b70.png)
         
-. Menghapus data (Hapus())
+Menghapus data (Hapus())
 
-. Menginput Nama, setelah Nama yang diinputkan maka data yang lainnya akan ikut terhapus sesuai dengan nama yang diinputkan.
+Menginput Nama, setelah Nama yang diinputkan maka data yang lainnya akan ikut terhapus sesuai dengan nama yang diinputkan.
 
-def hapus():
-    os.system("cls")
-    if len(data) <=0:
-        no_data()
-    else:
-        nama = data_mhsw()
-        print("HAPUS DATA")
-        print("----------")
-        nama = (input("Nama Mahasiswa\t: "))
-        for nama in data:
-            data.remove(nama)
-        print()
+![Screenshot (201)](https://user-images.githubusercontent.com/115772516/206907275-d27a89ba-ba0b-4c14-b4cc-53f5bfb2669f.png)
         
-. Menggunakan Perulangan uncountable, yang artinya selama statement bernilai True maka program akan terus berjalan. Jika statementnya False maka program akan terhenti.
+Menggunakan Perulangan uncountable, yang artinya selama statement bernilai True maka program akan terus berjalan. Jika statementnya False maka program akan terhenti.
 
-Loop = True
-while Loop:
-    print("Pilih Menu")
-    print("----------")
-    tanya = input("[(L)ihat, (T)ambah, (U)bah, (H)apus, (K)eluar] : ")
-    print()
-    if tanya == "l" or tanya == "L":
-        lihat()
-
-    elif tanya == "t" or tanya == "T":
-        tambah()
-
-    elif tanya == "u" or tanya == "U":
-        ubah()
-
-    elif tanya == "h" or tanya == "H":
-        hapus()
-
-    elif tanya == "k" or tanya == "K":
-        print("Program Selesai")
-        Loop = False
+![Screenshot (202)](https://user-images.githubusercontent.com/115772516/206907343-365ba80d-29ae-4b1d-b82d-e994c5ca917f.png)
         
 # Hasil Output
 
